@@ -9,23 +9,24 @@ How to use it?
 6. Short item! : shorted_df = model.short(n_clusters= x,  n_items = y ),  x is what you want clusters number , y is how many you want items
 
 Use like this~! 
+---
 
 1. arrange df
 df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
----
-2. Make model
+
+3. Make model
 model = MakeShortForm()
 
-3. Do embedding
+4. Do embedding
 model.embedding(df)
 
-4. Find_cluste
+5. Find_cluste
 model.find_nclustes()
 
-5. Short item!
+6. Short item!
 shorted_df = model.short(n_clusters= 5,  n_items = 25)
 
-6. fanal step, use this index, or col = 0
+7. fanal step, use this index, or col = 0
 
 ---
 
