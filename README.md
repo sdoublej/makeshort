@@ -15,19 +15,25 @@ Use like this~!
    
    df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
 
-3. Make model \n
+2. Make model 
+
    model = MakeShortForm()
 
-5. Do embedding \n
+3. Do embedding 
+
    model.embedding(df)
 
-7. Find_cluste \n
-   model.find_nclustes()
+4. Find_cluste 
 
-9. Short item! \n
+    model.find_nclustes()
+
+5. Short item! 
+
     shorted_df = model.short(n_clusters= 5,  n_items = 25)
 
-11. fanal step \n use this index, or col = 0
+11. fanal step
+
+    use this index, or col = 0
 
 ---
 
