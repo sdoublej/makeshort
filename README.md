@@ -1,11 +1,32 @@
-<번역 예정> 
+Read_Me! 
 
-이 레포지토리는 트랜스포머를 이용한 단축형 문항 제작을 위해 만들어졌습니다.
+How to use it? 
 
-클래스는 크게 두 가지로 되어있습니다.
+1. Arrange df! : df must be setted as like [ item_text, .... ], it is very important to set the item_text on 'col = 0' , 'MakeShoprt' is setted to do embedding on col = 0
+3. Make model: model = MakeShortForm()
+4. Do embedding :  model.embedding(df)
+5. Find_cluste : if you want to know how many clusters neded?, Use this Elbow Method, 'model.find_clustes()'
+6. Short item! : shorted_df = model.short(n_clusters= x,  n_items = y ),  x is what you want clusters number , y is how many you want items
 
-1.MakeShort (transformers를 기반으로 임베딩 한 후에 short form 해주는 기능을 합니다)
+Use like this~! 
 
-2.genetic algorithm (대표적인 단축형 제작 알고리즘을 최신으로 구현하였습니다. 적합도 근거는 샘플 별 합의 상관도로 구합니다.) 
+1. arrange df
+df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
+---
+2. Make model
+model = MakeShortForm()
 
-= 사용법, 추후 업데이트 예정 
+3. Do embedding
+model.embedding(df)
+
+4. Find_cluste
+model.find_nclustes()
+
+5. Short item!
+shorted_df = model.short(n_clusters= 5,  n_items = 25)
+
+6. fanal step, use this index, or col = 0
+
+---
+
+
