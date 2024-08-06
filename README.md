@@ -11,22 +11,22 @@ How to use it?
 Use like this~! 
 ---
 
-1. arrange df
+1. arrange df \n
    df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
 
-3. Make model
+3. Make model \n
    model = MakeShortForm()
 
-5. Do embedding
+5. Do embedding \n
    model.embedding(df)
 
-7. Find_cluste
+7. Find_cluste \n
    model.find_nclustes()
 
-9. Short item!
+9. Short item! \n
     shorted_df = model.short(n_clusters= 5,  n_items = 25)
 
-11. fanal step, use this index, or col = 0
+11. fanal step \n use this index, or col = 0
 
 ---
 
