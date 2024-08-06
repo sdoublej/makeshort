@@ -12,24 +12,19 @@ Use like this~!
 ---
 
 1. arrange df
-   
-df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
+   df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
 
 3. Make model
-   
-model = MakeShortForm()
+   model = MakeShortForm()
 
 5. Do embedding
-
-model.embedding(df)
+   model.embedding(df)
 
 7. Find_cluste
-   
-model.find_nclustes()
+   model.find_nclustes()
 
 9. Short item!
-    
-shorted_df = model.short(n_clusters= 5,  n_items = 25)
+    shorted_df = model.short(n_clusters= 5,  n_items = 25)
 
 11. fanal step, use this index, or col = 0
 
