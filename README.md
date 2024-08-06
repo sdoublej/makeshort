@@ -11,7 +11,8 @@ How to use it?
 Use like this~! 
 ---
 
-1. arrange df \n
+1. arrange df
+   
    df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
 
 3. Make model \n
