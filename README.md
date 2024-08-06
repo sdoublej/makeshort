@@ -12,21 +12,26 @@ Use like this~!
 ---
 
 1. arrange df
+   
 df = pd.read_csv('/content/drive/MyDrive/ex/big_5test_Tocsv.csv', index_col = 0)
 
 3. Make model
+   
 model = MakeShortForm()
 
-4. Do embedding
+5. Do embedding
+
 model.embedding(df)
 
-5. Find_cluste
+7. Find_cluste
+   
 model.find_nclustes()
 
-6. Short item!
+9. Short item!
+    
 shorted_df = model.short(n_clusters= 5,  n_items = 25)
 
-7. fanal step, use this index, or col = 0
+11. fanal step, use this index, or col = 0
 
 ---
 
