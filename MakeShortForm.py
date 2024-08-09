@@ -12,6 +12,7 @@ class MakeShortForm:
         self.kmeans = None
         self.centroids = None
         self.labels = None
+        self.selected_df = None
 
     def embedding(self, df):
         self.df = df
@@ -69,9 +70,10 @@ class MakeShortForm:
             self.final_short_items_index += item_names
 
         selected_df = self.sort_df.loc[self.final_short_items_index].sort_index()
+        self.selected_df = selected_df
         return selected_df
 
     def sav(self):
-        self.sort_df.to_csv(self.file_path, index = False)
+        self.slected_df.to_csv(self.file_path, index = False)
 
 
