@@ -72,6 +72,6 @@ class MakeShortForm:
         return selected_df
 
     def sav(self):
-        self.sort_df.to_excel(file_path, index = False)
+        self.sort_df.to_csv(self.file_path, index = False)
 
 
