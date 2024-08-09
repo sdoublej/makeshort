@@ -70,3 +70,8 @@ class MakeShortForm:
 
         selected_df = self.sort_df.loc[self.final_short_items_index].sort_index()
         return selected_df
+
+    def sav(self):
+        self.sort_df.to_excel(file_path, index = False)
+
+
